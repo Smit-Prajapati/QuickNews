@@ -1,5 +1,4 @@
 const apiKey = "d39c26ae66f349649620748d23c13980";
-const url = "https://newsapi.org/v2/everything?q=";
 let requestUrl;
 const advertisementPicture = "images/news-anchor.svg";
 
