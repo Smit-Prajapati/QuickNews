@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon_white.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <script src="api.js" defer></script>
+    <script src="https://kit.fontawesome.com/2e68caf7e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-top">
+            <div class="container">
+                <div class="logo-container">
+                    <div class="logo" id="navbar-logo" onclick="window.location.reload()" style="cursor: pointer;">
+                        <img src="images/quickNewsLogoMain.svg" alt="Quick News">
+                    </div>
+                    <div class="nav-icons">
+                        <div class="search-icon" id="search-button-mobile">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="menu-icon" id="menu-button">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="search-bar" id="search-bar">
+                        <input type="text" id="search-text" placeholder="Search Topic">
+                        <button id="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-bottom">
+            <div class="container">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#" class="nav-link active">General</a></li>
+                    <li><a href="#" class="nav-link">Sports</a></li>
+                    <li><a href="#" class="nav-link">Entertainment</a></li>
+                    <li><a href="#" class="nav-link">Technology</a></li>
+                    <li><a href="#" class="nav-link">Business</a></li>
+                    <li><a href="#" class="nav-link">Health</a></li>
+                    <li><a href="#" class="nav-link">Science</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="section-heading-hero section-heading" id="hero-section-heading">
+                Top headlines from india
+            </div>
+
+            <div class="hero" id="hero">
+                <!-- <div class="hero-news">
+                    <a href="#" target="_blank">
+                        <img src="https://www.naturaldiamonds.com/wp-content/uploads/2022/06/NDC_001.jpg" alt="image">
+                        <div class="content">
+                            <h1>Ana de armas</h1>
+                            <p>Times of India</p>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+    </section>
+
+    <section class="news-cards-section">
+        <div class="container">
+            <div class="section-heading-news-cards section-heading" id="news-cards-heading">
+                Trending News
+            </div>
+            <div class="trending-news-flex-container-main">
+                <div class="cards-container" id="cards-container">
+                    <!-- <div class="card">
+                        <a href="#" target="_blank">
+                            <div class="card-image">
+                                <img src="https://c.ndtvimg.com/2019-06/6hgoalm_narendra-modi-amit-shah-pti_625x300_01_June_19.jpg"
+                                    alt="image">
+                                <div class="source">
+                                    Times of india
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="card-title">
+                                    In BJP's Late-Night Meet, 2024 Polls And Reshuffle On Agenda - NDTV
+                                </div>
+                                <div class="card-description">
+                                    Senior BJP leaders held a meeting last night to discuss the strategy for the 2024
+                                    Lok Sabha elections, sources said.
+
+                                </div>
+                                <div class="card-date">
+                                    6/29/2023, 11:36:00 AM
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="only-headlines-container" id="only-headlines-container">
+                    <div class="advertisement">
+                        <img src="images/news-anchor.svg" alt="advertisement">
+                    </div>
+                    <!-- <div class="headline">
+                        <a href="#">
+                            <h1>In BJP's Late-Night Meet, 2024 Polls And Reshuffle On Agenda - NDTV</h1>
+                            <div class="source">
+                                Times of india
+                            </div>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img class="background-image" src="images/footer_background.jpg" alt="background">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo" onclick="window.location.reload()" style="cursor: pointer;">
+                    <img src="images/quickNewsLogoWhiteOrange.svg" alt="Quick News">
+                </div>
+                <div class="footer-links" id="footer-links">
+                    <a href="#" id="cricket">Cricket</a>
+                    <a href="#">Apple</a>
+                    <a href="#">Amazon</a>
+                    <a href="#">Hollywood</a>
+                    <a href="#">USA</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Tesla</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
